@@ -1,3 +1,49 @@
-<p>
-  footer works!
-</p>
+<div class="container footer" 
+    fxLayout="row wrap" 
+    fxLayout.lt-md="column"
+    fxLayoutAlign="center center" 
+    fxLayoutGap="10px">
+
+  <div fxFlex="100" fxFlex.gt-sm="50">
+    <div fxLayout="row">
+        <h1>Angular Fashions</h1>
+    </div>
+    <div fxLayout="row">
+        <h4>FOLLOW US</h4>
+    </div>
+    <div fxLayout="row">
+      <div>
+        <a mat-icon-button class="btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+        <a mat-icon-button class="btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+        <a mat-icon-button class="btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+        <a mat-icon-button class="btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+        <a mat-icon-button class="btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+        <a mat-icon-button class="btn-mail" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+      </div>
+    </div>
+    <div fxLayout="row">
+      <h4>ABOUT US</h4>
+    </div>
+    <div fxLayout=“row”>
+      <mat-list dense class="inline-list">
+        <mat-list-item><a mat-button routerLink='/home'>About Us</a></mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-list-item><a mat-button routerLink='/home'>Blog</a></mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-list-item><a mat-button routerLink='/home'>Insights</a></mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-list-item><a mat-button routerLink='/home'>Jobs</a></mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-list-item><a mat-button routerLink='/home'>Partnerships</a></mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-list-item><a mat-button routerLink='/home'>Terms of Use</a></mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-list-item><a mat-button routerLink='/home'>Privacy Policy</a></mat-list-item>
+        <mat-divider [vertical]="true"></mat-divider>
+        <mat-list-item><a mat-button routerLink='/home'>Contact</a></mat-list-item>
+      </mat-list>
+    </div>
+    <div fxLayout="row">
+        <p>Copyright @ 2020 Angular Fashions</p>
+    </div>
+</div>

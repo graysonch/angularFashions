@@ -1,0 +1,55 @@
+$pinkybeige: #f0bcb2;
+$font-family: "Helvetica";
+$list-height: 12px;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: $font-family;
+    @include zero-margin(20px, 0px);
+
+    h4 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: $pinkybeige;
+    }
+
+    p {
+        font-size: $list-height;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .mat-list.inline-list {
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: $list-height;
+        color: white;
+        padding: 0px;
+
+        .mat-button {
+            color: white;
+        }
+
+        .mat-divider-vertical {
+            height: 10px;
+        }
+    }
+}
+
+.btn-facebook {color:black!important; background-color:white!important;}
+.btn-google-plus{color:black!important;background-color:white!important;}
+.btn-youtube{color:black!important;background-color:white!important;}
+.btn-linkedin{color:black!important;background-color:white!important;}
+.btn-twitter{color:black!important;background-color:white!important;}
+.btn-mail{color:black!important;background-color:white!important;}
+
+
