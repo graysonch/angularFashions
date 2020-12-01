@@ -27,20 +27,36 @@ $list-height: 12px;
     }
 
     .mat-list.inline-list {
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        flex-wrap: wrap;
-        font-size: $list-height;
-        color: white;
-        padding: 0px;
+        
+        @media only screen and (min-width: 400px) {
+            display: flex; 
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: $list-height;
+            color: white;
+            margin-left: 10px;
+            margin-right: 20px;
+        }
 
+        .mat-list-item {
+            @media only screen and (max-width: 400px) {
+                display: flex; 
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
         .mat-button {
             color: white;
         }
 
         .mat-divider-vertical {
             height: 10px;
+            @media only screen and (max-width: 400px) {
+                display: none;
+            }
         }
     }
 }
