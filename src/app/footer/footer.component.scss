@@ -28,6 +28,7 @@ $list-height: 12px;
 
     .mat-list.inline-list {
         
+        // for screens greater than 400
         @media only screen and (min-width: 400px) {
             display: flex; 
             flex-wrap: wrap;
@@ -39,6 +40,7 @@ $list-height: 12px;
             margin-right: 20px;
         }
 
+        // for screens less than 400
         .mat-list-item {
             @media only screen and (max-width: 400px) {
                 display: flex; 

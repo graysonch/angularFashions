@@ -27,10 +27,12 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatCardModule,
+    MatButtonModule,
     MatListModule,
     MatGridListModule,
-    MatCardModule,
-    MatButtonModule
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
