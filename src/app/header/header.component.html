@@ -1,6 +1,32 @@
-<!-- <mat-toolbar color="primary">
-  <span>Responsive Navigation</span> <span class="example-spacer"></span>
-  <a href="#" mat-button>Menu Item 1</a> <a href="#" mat-button>Menu Item 2</a>
-  <a href="#" mat-button>Menu Item 3</a> <a href="#" mat-button>Menu Item 4</a>
-  <a href="#" mat-button>Menu Item 5</a> <a href="#" mat-button>Menu Item 6</a>
-</mat-toolbar> -->
+<div class="container header"
+  fxLayoutAlign="center center"
+  fxLayout="column"
+  fxFlex="100" 
+  fxShow="true">
+  <div fxLayout="row">
+    <h1>Angular Fashions</h1>
+  </div>
+  <div fxHide.lt-md="true" fxLayout="row">
+    <mat-toolbar color="primary">
+        <a mat-button routerLink="/new" routerLinkActive='active'>NEW!</a>
+        <a mat-button routerLink="/clothing" routerLinkActive='active'>CLOTHING</a> 
+        <a mat-button routerLink="/sweaters" routerLinkActive='active'>SWEATERS</a>
+        <a mat-button routerLink="/dresses" routerLinkActive='active'>DRESSES</a>
+        <a mat-button routerLink="/shoes_and_accessories" routerLinkActive='active'>SHOES + ACCESSORIES</a>
+        <a mat-button routerLink="/sale" routerLinkActive='active'>SALE</a>
+        <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-search fa-lg"></span></a>
+        <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-shopping-bag fa-lg"></span></a>
+        <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-sign-in fa-lg"></span></a>
+    </mat-toolbar>
+  </div>
+
+  <div fxHide.gt-sm="true" fxLayout="row">
+    <mat-toolbar color="primary" class="icon-bar">
+      <a mat-button routerLink="/menu" routerLinkActive='active'><span class="fa fa-list fa-md"></span> MENU</a>
+      <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-search fa-md"></span> SEARCH</a>
+      <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-shopping-bag fa-md"></span> BAG</a>
+      <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-sign-in fa-md"></span> LOGIN</a>
+    </mat-toolbar>
+  </div>
+</div>
+

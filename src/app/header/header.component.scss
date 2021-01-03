@@ -1,0 +1,39 @@
+$pinkybeige: #f0bcb2;
+$font-family: "Helvetica";
+$list-height: 12px;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: $font-family;
+    @include zero-margin(0px, 0px);
+
+    h1 {
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .mat-button {
+        color: white;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        //font-size: $list-height;
+    }
+
+    .mat-toolbar.icon-bar {
+        
+        // for screens greater than 400
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: $list-height;
+        margin-bottom: 20px;
+    }
+}

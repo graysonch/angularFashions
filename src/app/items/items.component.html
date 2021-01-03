@@ -1,3 +1,16 @@
-<p>
-  items works!
-</p>
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex *ngIf="items">
+    <mat-grid-list cols="2" rowHeight="200px">
+      <mat-grid-tile *ngFor="let item of items">
+        <img height="250px" width="200" src="{{ item.image }}" alt={{item.name}}>
+        <mat-grid-tile-footer>
+          <h1>{{item.name | uppercase}}</h1>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+</div>

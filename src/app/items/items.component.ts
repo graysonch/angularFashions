@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Item } from '../shared/item';
+import { ITEMS } from '../shared/items';
 
 @Component({
   selector: 'app-items',
@@ -6,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./items.component.scss']
 })
 export class ItemsComponent implements OnInit {
+
+  items: Item[] = ITEMS;
+
+  selectedItem: Item;
 
   constructor() { }
 
