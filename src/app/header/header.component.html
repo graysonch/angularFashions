@@ -8,15 +8,15 @@
   </div>
   <div fxHide.lt-md="true" fxLayout="row">
     <mat-toolbar color="primary">
-        <a mat-button routerLink="/new" routerLinkActive='active'>NEW!</a>
-        <a mat-button routerLink="/clothing" routerLinkActive='active'>CLOTHING</a> 
-        <a mat-button routerLink="/sweaters" routerLinkActive='active'>SWEATERS</a>
-        <a mat-button routerLink="/dresses" routerLinkActive='active'>DRESSES</a>
-        <a mat-button routerLink="/shoes_and_accessories" routerLinkActive='active'>SHOES + ACCESSORIES</a>
-        <a mat-button routerLink="/sale" routerLinkActive='active'>SALE</a>
-        <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-search fa-lg"></span></a>
-        <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-shopping-bag fa-lg"></span></a>
-        <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-sign-in fa-lg"></span></a>
+        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'>NEW!</a>
+        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'>CLOTHING</a> 
+        <a mat-button [routerLink]="['/items', 'sweaters']" routerLinkActive='active'>SWEATERS</a>
+        <a mat-button [routerLink]="['/items', 'dresses']" routerLinkActive='active'>DRESSES</a>
+        <a mat-button [routerLink]="['/items', 'shoes_and_accessories']" routerLinkActive='active'>SHOES + ACCESSORIES</a>
+        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'>SALE</a>
+        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-search fa-lg"></span></a>
+        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-shopping-bag fa-lg"></span></a>
+        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-sign-in fa-lg"></span></a>
     </mat-toolbar>
   </div>
 

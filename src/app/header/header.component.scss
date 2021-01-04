@@ -23,17 +23,22 @@ $list-height: 12px;
         color: white;
         margin-top: 0px;
         margin-bottom: 0px;
-        //font-size: $list-height;
+        background-color: black;
+        font-size: 16px;
     }
 
-    .mat-toolbar.icon-bar {
-        
-        // for screens greater than 400
+    .mat-toolbar {
+        background-color: black;
         display: flex; 
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        font-size: $list-height;
         margin-bottom: 20px;
+
+        .mat-button {
+            @media only screen and (max-width: 400px) {
+                font-size: $list-height;
+            }  
+        }
     }
 }

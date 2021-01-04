@@ -18,6 +18,8 @@ import { ItemsComponent } from './items/items.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
+import { ItemService } from './services/item.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +40,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     MatSidenavModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [ItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

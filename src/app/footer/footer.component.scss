@@ -43,6 +43,7 @@ $list-height: 12px;
         // for screens less than 400
         .mat-list-item {
             @media only screen and (max-width: 400px) {
+                color: white;
                 display: flex; 
                 flex-direction: column;
                 justify-content: center;
@@ -54,8 +55,15 @@ $list-height: 12px;
             color: white;
         }
 
+        .mat-divider {
+            color: white;
+            border-top-color: white;
+        }
+
         .mat-divider-vertical {
             height: 10px;
+            border-top-color: white;
+            color: white;
             @media only screen and (max-width: 400px) {
                 display: none;
             }
