@@ -18,6 +18,8 @@ export class ItemsComponent implements OnInit {
 
   category: string;
 
+  breakpoint: number;
+
   constructor(private itemService: ItemService,
       private route: ActivatedRoute,) { 
         route.params.subscribe(
@@ -25,7 +27,12 @@ export class ItemsComponent implements OnInit {
       }
 
   ngOnInit() {
-    this.refreshItems(this.route.snapshot.params['category']);
+    this.refreshItems('all');
+    this.setBreakPoint()
+  }
+
+  onResize(event) {
+    this.setBreakPoint()
   }
 
   refreshItems(category: string) {
@@ -38,23 +45,25 @@ export class ItemsComponent implements OnInit {
     }
   }
 
-  @ViewChild('gridView') gridView;
-
-  columnNum = 6;
-
-  divSize = 900;
-
-  setColNum(div){
-    // console.log(div);
-    if(this.gridView.nativeElement.offsetWidth < 400){
-      this.columnNum = 2;
+  setBreakPoint(){
+    console.log(window.innerWidth);
+    if(window.innerWidth < 400){
+      this.breakpoint = 2;
     }
-    if(this.gridView.nativeElement.offsetWidth >= 400 
-        && this.gridView.nativeElement.offsetWidth < 800){
-      this.columnNum = 4;
+    if(window.innerWidth >= 400 
+        && window.innerWidth < 600){
+      this.breakpoint = 3;
     }
-    if(this.gridView.nativeElement.offsetWidth >= 800){
-      this.columnNum = 6;
+    if(window.innerWidth >= 600 
+      && window.innerWidth < 800){
+    this.breakpoint = 4;
+    }
+    if(window.innerWidth >= 800 
+      && window.innerWidth < 1000){
+    this.breakpoint = 5;
+    }
+    if(window.innerWidth >= 1000){
+      this.breakpoint = 6;
     }
   }
 
