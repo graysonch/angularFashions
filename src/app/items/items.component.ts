@@ -22,12 +22,14 @@ export class ItemsComponent implements OnInit {
 
   constructor(private itemService: ItemService,
       private route: ActivatedRoute,) { 
+        console.log("Constructor");
         route.params.subscribe(
           params => this.refreshItems(params['category']));
       }
 
   ngOnInit() {
     // this.refreshItems('all');
+    console.log("ngOnInit");
     this.refreshItems(this.category);
     this.setBreakPoint()
   }
@@ -39,7 +41,11 @@ export class ItemsComponent implements OnInit {
   refreshItems(category: string) {
     console.log(category);
     this.category = category;
-    if (category === 'all' || category === 'sale' || category === 'new') {
+    if (this.category === undefined) {
+      this.category = 'all';
+    }
+      
+    if (this.category === 'all' || this.category === 'sale' || this.category === 'new') {
       this.items = this.itemService.getItems();
     }
     else {
@@ -48,7 +54,7 @@ export class ItemsComponent implements OnInit {
   }
 
   setBreakPoint(){
-    console.log(window.innerWidth);
+    //console.log(window.innerWidth);
     if(window.innerWidth < 400){
       this.breakpoint = 2;
     }
