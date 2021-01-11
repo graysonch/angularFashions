@@ -1,12 +1,38 @@
 
-.mat-grid-list {
+$font-family: "Helvetica";
 
-    @media only screen and (min-width: 400px) {
-        cols: 6;
-    }
-
-    @media only screen and (max-width: 400px) {
-        cols: 2;
-    }
+.mat-grid-tile-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: $font-family;
+    // @include zero-margin(20px, 0px);
     
+    h1.sale {
+        color: red;
+    }
+
+    h1.new {
+        color: yellow;
+    }
+
+    h1 {
+        
+        
+        @media only screen and (max-width: 400px) {
+            font-size: 8px;
+        }
+        @media only screen and (min-width: 401px) and (max-width: 600px) {
+            font-size: 9px;
+        }
+        @media only screen and (min-width: 601px) and (max-width: 800px) {
+            font-size: 10px;
+        }
+        @media only screen and (min-width: 801px) and (max-width: 1050px) {
+            font-size: 11px;
+        }
+        @media only screen and (min-width: 1051px) and (max-width: 1200px) {
+            font-size: 12px;
+        }
+    }
 }

@@ -16,7 +16,7 @@ export class ItemsComponent implements OnInit {
 
   selectedItem: Item;
 
-  category: string;
+  category: string = 'all';
 
   breakpoint: number;
 
@@ -27,7 +27,8 @@ export class ItemsComponent implements OnInit {
       }
 
   ngOnInit() {
-    this.refreshItems('all');
+    // this.refreshItems('all');
+    this.refreshItems(this.category);
     this.setBreakPoint()
   }
 
@@ -37,7 +38,8 @@ export class ItemsComponent implements OnInit {
 
   refreshItems(category: string) {
     console.log(category);
-    if (category === 'all') {
+    this.category = category;
+    if (category === 'all' || category === 'sale' || category === 'new') {
       this.items = this.itemService.getItems();
     }
     else {

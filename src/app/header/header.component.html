@@ -8,12 +8,12 @@
   </div>
   <div fxHide.lt-md="true" fxLayout="row">
     <mat-toolbar color="primary">
-        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'>NEW!</a>
+        <a mat-button [routerLink]="['/items', 'new']" routerLinkActive='active'>NEW!</a>
         <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'>CLOTHING</a> 
         <a mat-button [routerLink]="['/items', 'sweaters']" routerLinkActive='active'>SWEATERS</a>
         <a mat-button [routerLink]="['/items', 'dresses']" routerLinkActive='active'>DRESSES</a>
         <a mat-button [routerLink]="['/items', 'shoes_and_accessories']" routerLinkActive='active'>SHOES + ACCESSORIES</a>
-        <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'>SALE</a>
+        <a mat-button [routerLink]="['/items', 'sale']" routerLinkActive='active'>SALE</a>
         <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-search fa-lg"></span></a>
         <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-shopping-bag fa-lg"></span></a>
         <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-sign-in fa-lg"></span></a>
@@ -22,10 +22,10 @@
 
   <div fxHide.gt-sm="true" fxLayout="row">
     <mat-toolbar color="primary" class="icon-bar">
-      <a mat-button routerLink="/menu" routerLinkActive='active'><span class="fa fa-list fa-md"></span> MENU</a>
-      <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-search fa-md"></span> SEARCH</a>
-      <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-shopping-bag fa-md"></span> BAG</a>
-      <a mat-button routerLink="" routerLinkActive='active'><span class="fa fa-sign-in fa-md"></span> LOGIN</a>
+      <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-list fa-md"></span> MENU</a>
+      <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-search fa-md"></span> SEARCH</a>
+      <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-shopping-bag fa-md"></span> BAG</a>
+      <a mat-button [routerLink]="['/items', 'all']" routerLinkActive='active'><span class="fa fa-sign-in fa-md"></span> LOGIN</a>
     </mat-toolbar>
   </div>
 </div>

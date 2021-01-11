@@ -55,14 +55,17 @@ $list-height: 12px;
             color: white;
         }
 
-        .mat-divider-vertical {
-            height: 10px;
-            border-top-color: white;
-            color: white;
+        .mat-divider {
+            display: block;
+            margin: 0;
+            height: 8px;
+            border-width: 1px;
+            border-color:  white;
+            border-style: solid;
             @media only screen and (max-width: 400px) {
                 display: none;
             }
-        }
+         }
     }
 }
 

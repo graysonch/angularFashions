@@ -8,6 +8,8 @@
         <img height="250px" width="200" src="{{ item.image }}" alt={{item.name}}>
         <mat-grid-tile-footer>
           <h1>{{item.name | uppercase}}</h1>
+          <h1 class="sale" *ngIf="category === 'sale'" >SALE!</h1>
+          <h1 class="new" *ngIf="category === 'new'" >NEW!</h1>
         </mat-grid-tile-footer>
       </mat-grid-tile>
     </mat-grid-list>
