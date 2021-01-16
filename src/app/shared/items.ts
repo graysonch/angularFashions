@@ -4,7 +4,7 @@ export const ITEMS: Item[] = [
     {
         id: '0',
         name: 'ANIMAL-PRINT MOTO JACKET',
-        image: '/assets/images/570297572_922_large.webp',
+        image: './assets/images/570297572_922_large.webp',
         category: 'jacket',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -14,7 +14,7 @@ export const ITEMS: Item[] = [
     {
         id: '1',
         name: 'TIGER-PRINT COZY SWEATER DRESS',
-        image: '/assets/images/570298851_922_large.webp',
+        image: './assets/images/570298851_922_large.webp',
         category: 'dresses',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -24,7 +24,7 @@ export const ITEMS: Item[] = [
     {
         id: '2',
         name: 'SUEDE HIGH-HEEL ANKLE BOOTIES',
-        image: '/assets/images/570299512_001_large.webp',
+        image: './assets/images/570299512_001_large.webp',
         category: 'shoes_and_accessories',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'black',
@@ -34,7 +34,7 @@ export const ITEMS: Item[] = [
     {
         id: '3',
         name: 'TIGER-PRINT KIMONO COVERUP',
-        image: '/assets/images/570298252_922_large.webp',
+        image: './assets/images/570298252_922_large.webp',
         category: 'sweaters',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -44,7 +44,7 @@ export const ITEMS: Item[] = [
     {
         id: '4',
         name: 'ANIMAL-PRINT MOTO JACKET',
-        image: '/assets/images/570297572_922_large.webp',
+        image: './assets/images/570297572_922_large.webp',
         category: 'jacket',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -54,7 +54,7 @@ export const ITEMS: Item[] = [
     {
         id: '5',
         name: 'TIGER-PRINT COZY SWEATER DRESS',
-        image: '/assets/images/570298851_922_large.webp',
+        image: './assets/images/570298851_922_large.webp',
         category: 'dresses',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -64,7 +64,7 @@ export const ITEMS: Item[] = [
     {
         id: '6',
         name: 'SUEDE HIGH-HEEL ANKLE BOOTIES',
-        image: '/assets/images/570299512_001_large.webp',
+        image: './assets/images/570299512_001_large.webp',
         category: 'shoes_and_accessories',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'black',
@@ -74,7 +74,7 @@ export const ITEMS: Item[] = [
     {
         id: '7',
         name: 'TIGER-PRINT KIMONO COVERUP',
-        image: '/assets/images/570298252_922_large.webp',
+        image: './assets/images/570298252_922_large.webp',
         category: 'sweaters',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -84,7 +84,7 @@ export const ITEMS: Item[] = [
     {
         id: '8',
         name: 'ANIMAL-PRINT MOTO JACKET',
-        image: '/assets/images/570297572_922_large.webp',
+        image: './assets/images/570297572_922_large.webp',
         category: 'jacket',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -94,7 +94,7 @@ export const ITEMS: Item[] = [
     {
         id: '9',
         name: 'TIGER-PRINT COZY SWEATER DRESS',
-        image: '/assets/images/570298851_922_large.webp',
+        image: './assets/images/570298851_922_large.webp',
         category: 'dresses',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
@@ -104,7 +104,7 @@ export const ITEMS: Item[] = [
     {
         id: '10',
         name: 'SUEDE HIGH-HEEL ANKLE BOOTIES',
-        image: '/assets/images/570299512_001_large.webp',
+        image: './assets/images/570299512_001_large.webp',
         category: 'shoes_and_accessories',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'black',
@@ -114,7 +114,7 @@ export const ITEMS: Item[] = [
     {
         id: '11',
         name: 'TIGER-PRINT KIMONO COVERUP',
-        image: '/assets/images/570298252_922_large.webp',
+        image: './assets/images/570298252_922_large.webp',
         category: 'sweaters',
         dob: '2012-10-16T17:57:28.556094Z',
         shade: 'grey',
